@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Escenarios</title>
+  <meta name="description" content="Escenarios del golfo">
+  <meta name="author" content="Ixchel">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="lib/jquery-ui/css/smoothness/jquery-ui-1.8.10.custom.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="http://grupo-ioa.atmosfera.unam.mx/templates/beeze-cuau/favicon.ico">
+
+  <!-- Javascript -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+  <script src="lib/WindRose.js"></script>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="myTopnav" class="sticky">
+    <div class="container">
+      <header class="major">
+        <h4>Escenarios en GoM</h4>
+      </header>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="one-half column">
+      <div class="row">
+        
+        <div id="mapid" class="eight columns" ></div>
+
+        <div class="four columns">
+                <label for="slct_month">Mes</label>
+                <select id="slct_month">
+                  <option value="1" selected="selected">Enero</option>
+                  <option value="2">Febrero</option>
+                  <option value="3">Marzo</option>
+                  <option value="4">Abril</option>
+                  <option value="5">Mayo</option>
+                  <option value="6">Junio</option>
+                  <option value="7">Julio</option>
+                  <option value="8">Agosto</option>
+                  <option value="9">Septiembre</option>
+                  <option value="10">Octubre</option>
+                  <option value="11">Noviembre</option>
+                  <option value="12">Diciembre</option>
+                </select>
+        </div>
+      </div>
+
+    </div>
+    <div class="one-half column">
+      <div class="container_anim">
+    
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="footer">
+        <span>
+         Por <a href="https://github.com/ixchelzg">M.S. Ixchel Zazueta</a> 
+       </span>
+        <div class="float_right"> <img src="images/logo.png" class="nav_logo_min"> </div>
+  </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="lib/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/*Header*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9999999;
+    background: #71B6F2;
+    box-shadow: 0 15px 10px -15px #111;
+}
+
+.container{
+	margin-bottom: 1%;
+}
+
+.calendar_buttons{
+	border-radius: 100%;
+    /* width: auto; */
+    padding: 0 15px;
+    color: #FBFBFF;
+    background-color: #1D1E2C;
+    border-color: #1D1E2C;
+    font-weight: bold;
+    border: 1px solid #1D1E2C;
+}
+
+.calendar_buttons:hover, .calendar_buttons:focus{
+    color: #FBFBFF;
+    border: 1px solid #1D1E2C;
+    outline: initial;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.sticky .icon {
+  display: none;
+}
+
+header.major {
+    margin-top: 1%;
+}
+header.major h4 {
+	text-align: center;
+  margin-bottom: 0;
+}
+header .button-primary{
+    margin-top: 28px;
+}
+
+label {
+  display: inline-block;
+}
+
+
+
+/*Charts*/
+.sticky + .container_charts {
+    padding-top: 12%;
+}
+
+.container_charts{	
+    padding-top: 5%;
+	width: 90%;
+    position: relative;
+    margin: 0 auto;
+
+     position: absolute;
+    margin: 0 auto;
+    top: 700px;
+}
+
+.one_chart{
+	width: 27%;
+	padding: 15px;
+	margin: 30px;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    float: left;
+}
+
+/*Footer*/
+.float_right{
+  float: right;
+  padding: 5px;
+}
+
+.footer {
+    background-color: #F4F9FC;
+    /*margin-bottom: 0;
+    padding: 20px 30px;
+    margin-top: 50px;
+    height: 40px;
+    */
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer > span {
+    padding: 5px;
+    margin: 3px;
+    position: absolute;
+}
+
+
+.nav_logo_min{
+	width: 50px;
+}
+
+/*
+ * Media queries 
+ * for a responsive web design
+ * (we trying ..)
+ */
+
+@media screen and (min-width: 761px) and (max-width: 960px) {
+	.sticky + .container_charts {
+    	padding-top: 16%;
+	}
+	.columns{
+		width: 100% !important;
+	}
+
+}
+
+@media screen and (min-width: 961px)  and (max-width: 1330px) {
+	.sticky + .container_charts {
+    	padding-top: 14% !important;
+	}
+}
+
+@media screen and (min-width: 1601px)  {
+	.sticky + .container_charts {
+    	padding-top: 8% !important;
+	}
+}
+
+@media screen and (max-width: 990px){
+	.one_chart {
+	    width: 90%;
+	    padding: 5px;
+	    margin: 15px;
+	}
+}
+
+@media screen and (min-width: 991px) and (max-width: 1600px){
+	.one_chart {
+	    width: 45%;
+	    padding: 5px;
+	    margin: 15px;
+	}
+}
+
+/*Responsive menu for mobile*/
+@media screen and (max-width: 760px) {
+	.nav_logo_min{
+		display: none;
+	}
+   .sticky{
+		width: 100%;
+	}
+	h4{
+		float: left;
+		margin-bottom: 0;
+	}
+  .sticky .container .major .row {display: none;}
+  .sticky a.icon {
+    float: right;
+    display: block;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-top: -4px;
+  }
+
+  .sticky.responsive {
+  	/*position: relative;*/
+  	color: #000;
+  }
+  .sticky .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    right: 24px;
+  }
+  .sticky.responsive .container .major .row { 
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+
+  .sticky.responsive .container .major .row .columns{ 
+  	margin-left: 0;
+  	width: 100%;
+  }
+  .sticky.responsive .container .major .row .columns input, select{ 
+  	color: #000;
+  }
+  .sticky.responsive h4{
+  	    width: 100%;
+    text-align: left;
+  }
+}
+
+/*MAPS STYLES*/
+/*
+div#mapid, .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+    position: absolute !important;
+    width: 100%;
+    height: 80%;
+    top: 12.5%;
+}
+
+.mapchart{
+  width: 500px;
+  height: 500px;
+}
+
+@media screen and (max-width: 760px) {
+  div#mapid, .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+    top: 5%;
+  }
+}
+*/
